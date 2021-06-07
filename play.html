@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<title>Wheel of Fortune</title>
+</head>
+
+<body>
+
+    <header>Wheel of Fortune</header>
+
+	<h1 id="roundMsg">Round:</h1>
+
+    <div id="guessGrid"></div>
+
+    <div id="letters">
+
+		<button id="guessActivate" class="chooseAct">Guess a letter</button>
+		<button id="buyVowel"  class="chooseAct">Buy a vowel(250$)</button>
+		<button id="spin" class="chooseAct">Spin</button>
+		<button id="solve"  class="chooseAct">Solve the puzzle</button>
+
+		<fieldset id="textForSolution">
+			<label for="textF">Write out your solution: </label>
+			<input type="text" id="textF">
+
+			<button id="submitSolution">Submit</button>
+		</fieldset>
+
+		<fieldset id="consonants">
+			<button class="buttonGuess">B</button>
+			<button class="buttonGuess">C</button>
+			<button class="buttonGuess">D</button>
+			<button class="buttonGuess">F</button>
+			<button class="buttonGuess">G</button>
+			<button class="buttonGuess">H</button>
+			<button class="buttonGuess">J</button>
+			<button class="buttonGuess">K</button>
+			<button class="buttonGuess">L</button>
+			<button class="buttonGuess">M</button>
+			<button class="buttonGuess">N</button>
+			<button class="buttonGuess">P</button>
+			<button class="buttonGuess">Q</button>
+			<button class="buttonGuess">R</button>
+			<button class="buttonGuess">S</button>
+			<button class="buttonGuess">T</button>
+			<button class="buttonGuess">V</button>
+			<button class="buttonGuess">W</button>
+			<button class="buttonGuess">X</button>
+			<button class="buttonGuess">Y</button>
+			<button class="buttonGuess">Z</button>
+		</fieldset>
+		<fieldset id="vowels">
+			<button class="buttonGuess">A</button>
+			<button class="buttonGuess">E</button>
+			<button class="buttonGuess">I</button>
+			<button class="buttonGuess">O</button>
+			<button class="buttonGuess">U</button>
+		</fieldset>
+	</div>
+
+    <div id="wheel-space">
+		<div class="picker"></div>
+		<img src="wheel.png" alt="wheel" id="wheel">
+	</div>
+
+	<footer id="playerInfo">Kiril: <br> 2000$</footer>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,233 @@
+:root {
+    --paleGreen: #A5DA80;
+    --lightGreen: #69BA32;
+    --paleBlue: #3855C8; 
+    --gold: #DCA320;
+    --spinNum: 2500deg;
+}
+
+html {
+    font-family:'Times New Roman', Times, serif;
+    background-color: var(--paleGreen);
+}
+
+header {
+    color: white;
+    text-shadow: 5px 5px var(--lightGreen);
+    display: block;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 70px;
+}
+
+h1{
+    display: inline;
+    padding-bottom: 5px;
+    background-color: var(--lightGreen);
+    color: white;
+}
+
+#guessGrid {
+    display: block;
+    background-color: var(--lightGreen);
+    margin: auto;
+}
+
+#guessGrid p {
+    display: inline-block;
+    background-color: white;
+    border: 5px solid black;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    width: 80px;
+}
+
+#guessGrid span::before { /*used to add spaces between words*/
+    content:" "; 
+    display:inline-block; 
+    width:40px;
+}
+
+#letters {
+    display: block;
+    padding-top: 15px;
+}
+
+button {
+    background-color: var(--lightGreen);
+    color: white;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    border-style: outset;
+    outline:none;
+    width: 23%; 
+}
+
+.buttonGuess {
+    font-size: 50px;
+    width: 65px;
+    height: 65px;
+    margin-top: 10px;
+}
+
+.chooseAct {
+    font-size: 35px;
+}
+
+button:hover:enabled {
+    opacity: 0.7;
+}
+
+button:disabled {
+    border-style: none;
+    filter: brightness(70%);
+}
+
+#textForSolution {
+    display: inline-block;
+    background-color: var(--lightGreen);
+    color: white;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    border-style: outset;
+    outline:none;
+    vertical-align: bottom;
+    font-size: 35px; 
+}
+
+input[type=text] {
+    background-color: white;
+    color: var(--lightGreen);
+    height: 50px;
+    outline: none;
+    font-size: 35px;
+}
+
+input[type=text]:focus {
+    border-color: var(--paleGreen);
+}
+
+#submitSolution {
+    font-size: 20px;
+}
+
+div, fieldset {
+    outline: none;
+    border: none;
+}
+
+.picker {
+    text-align: center;
+    margin: 0 auto;
+    top: 20px;
+    position: relative;
+    z-index: 3;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 50px solid var(--gold);
+    border-radius: 50%;
+  }
+
+  #wheel {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 70%;
+    align-self: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+  
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    position: fixed;
+    left: 85%;
+    bottom: 0;
+    width: 15%;
+    background-color: var(--lightGreen);
+    color: white;
+    font-size: 30px;
+    text-align: center;
+  }
+
+@keyframes spinning {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(var(--spinNum));}
+}
+
+@keyframes pickerSpin {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(-20deg);}
+}
+  
+/*@media screen and (min-width: 600px) {
+    body {
+        display: grid;
+        grid-column-gap: 10px;
+        grid-template-columns: 25% 75%;
+        grid-template-areas: 
+            'header header'
+            'nav article'
+            'aside aside'
+            'footer footer';
+    }
+}*/
+  
+@media screen and (min-width: 992px) {
+
+    #wheel {
+        width: 500px;
+        height: 500px;
+    }
+
+    button {
+        width: auto;
+    }
+
+    .buttonGuess {
+        font-size: 30px;
+        width: 45px;
+        height: 45px;
+        margin: auto;
+    }
+    
+    .chooseAct {
+        font-size: 24px;
+    }
+
+    #textForSolution {
+        font-size: 24px; 
+    }
+
+    input[type=text] {
+        height: 30px;
+        font-size: 20px;
+    }
+
+}
+  
+  
+  
+  
+  
+  

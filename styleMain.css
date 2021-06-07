@@ -1,0 +1,120 @@
+:root {
+    --paleGreen: #A5DA80;
+    --lightGreen: #69BA32;
+    --paleBlue: #3855C8; 
+    --gold: #DCA320;
+}
+
+html {
+    font-family:'Times New Roman', Times, serif;
+    background-color: var(--paleGreen);
+}
+
+header {
+    color: white;
+    text-shadow: 5px 5px var(--lightGreen);
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 120px;
+}
+
+.menu {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 50%;
+    font-size: 80px;
+    background-color: var(--lightGreen);
+    color: white;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    border-style: outset;
+    outline:none; 
+}
+
+.menu:hover:enabled {
+    opacity: 0.7;
+}
+
+.menu:disabled {
+    border-style: none;
+    filter: brightness(70%);
+}
+
+.menu:visited {
+    color: white;
+}
+
+#back {
+    display: inline;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 50px;
+    text-align: left;
+}
+
+ol {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 60px;
+    color: white;
+    list-style-position: inside;
+    text-shadow: 2px 2px var(--lightGreen);
+    margin-left: 20%;
+}
+
+p {
+    font-size: 40px;
+    color: white;
+    text-shadow: 5px 5px var(--lightGreen);
+}
+
+@media screen and (min-width: 992px) {
+    .menu {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 30%;
+        font-size: 50px;
+        background-color: var(--lightGreen);
+        color: white;
+        border: none;
+        text-decoration: none;
+        text-align: center;
+        padding: 5px;
+        border-radius: 10px;
+        border-style: outset;
+        outline:none; 
+    }
+
+    ol {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 30px;
+        margin-left: 35%;
+    }
+
+    header {
+        margin-top: 20px;
+        margin-bottom: 50px;
+        font-size: 70px;
+    }
+
+    #back {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 30px;
+    }
+}
