@@ -1,5 +1,5 @@
 # Wheel-of-Fortune
-A simple client side implemented Wheel of Fortune game. 
+A simple client side implemented Wheel of Fortune game using HTML, CSS, Javascript and JQuery.
 
 You have 5 tries each round to guess the correct word. After 3 rounds, the game ends and your score is saved in the Highscores section.
 
